@@ -3,9 +3,9 @@ layout: blog
 title: Labs Retrospective - Week 1
 date: 2019-02-15T17:13:50.260Z
 ---
-
 ![](../assets/lol.gif)
-![](../assets/smalldoggie.png)
+
+![](/content/assets/smalldoggie.png)
 
 # Part 1 - Individual Accomplishments this Week
 
@@ -23,23 +23,23 @@ Since our project requires us to add on new functionality to an already existing
 
 ### Ticket 1: Added comments to Readme.md
 
-- [Github](https://github.com/Lambda-School-Labs/labs-team-home/pull/247)
-- [Trello](https://trello.com/c/oyd8ltxC/37-add-comments-to-readme)
+* [Github](https://github.com/Lambda-School-Labs/labs-team-home/pull/247)
+* [Trello](https://trello.com/c/oyd8ltxC/37-add-comments-to-readme)
 
 ### Ticket 2: Even more comments!
 
-- [Github](https://github.com/Lambda-School-Labs/labs-team-home/pull/247)
-- [Trello](https://trello.com/c/oyd8ltxC/37-add-comments-to-readme)
+* [Github](https://github.com/Lambda-School-Labs/labs-team-home/pull/247)
+* [Trello](https://trello.com/c/oyd8ltxC/37-add-comments-to-readme)
 
 ### Ticket 3: Actually did something useful - redirected our repo to the right backend
 
-- [Github](https://github.com/Lambda-School-Labs/labs-team-home/pull/248)
-- [Trello](https://trello.com/c/jTXWoQ2d/17-learn-graphql-apollo-prisma-kai)
+* [Github](https://github.com/Lambda-School-Labs/labs-team-home/pull/248)
+* [Trello](https://trello.com/c/jTXWoQ2d/17-learn-graphql-apollo-prisma-kai)
 
 ### Ticket 4: Last pull, env variable update
 
-- [Github](https://github.com/Lambda-School-Labs/labs-team-home/pull/271)
-- [Trello](https://trello.com/c/jTXWoQ2d/17-learn-graphql-apollo-prisma-kai)
+* [Github](https://github.com/Lambda-School-Labs/labs-team-home/pull/271)
+* [Trello](https://trello.com/c/jTXWoQ2d/17-learn-graphql-apollo-prisma-kai)
 
 ## Detailed Analysis
 

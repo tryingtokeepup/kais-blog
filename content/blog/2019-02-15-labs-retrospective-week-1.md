@@ -5,7 +5,7 @@ date: 2019-02-15T17:13:50.260Z
 ---
 ![](../assets/lol.gif)
 
-![](/content/assets/smalldoggie.png)
+![](../assets/smalldoggie.png)
 
 # Part 1 - Individual Accomplishments this Week
 

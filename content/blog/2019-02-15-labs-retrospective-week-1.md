@@ -42,6 +42,7 @@ Since our project requires us to add on new functionality to an already existing
 
 
 ![cool thanks nedim](/content/assets/uploads/smalldoggie.png)
+![cool thanks nedim](/static/assets/smalldoggie.png)
 
 Yikes, this whole week was difficult for me. Need that dog above to keep me sane, for real. But Ticket 4 was me finally breaking down and asking the original team for help. I should probably screen shot our convo on zoom, but we as a team basically decided that enough was enough, and wasting another day (after using up 3 days of dev time) on trying to blindly get Auth0 was not possible. So I went ahead and contacted the previous team for some help deploying with Auth0, and they immediately sent their old env variables, even though that was supposed to be an internal secret. 
 

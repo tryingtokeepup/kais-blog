@@ -4,7 +4,7 @@ title: Labs Retrospective - Week 1
 date: 2019-02-15T17:13:50.260Z
 ---
 
-![](/assets/lol.gif)
+![](./assets/lol.gif)
 
 # Part 1 - Individual Accomplishments this Week
 

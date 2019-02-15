@@ -43,6 +43,10 @@ Since our project requires us to add on new functionality to an already existing
 
 ## Detailed Analysis
 
+
+
+![](../assets/doggie_2.jpg)
+
 Yikes, this whole week was difficult for me. Need that dog above to keep me sane, for real. But Ticket 4 was me finally breaking down and asking the original team for help. I should probably screen shot our convo on zoom, but we as a team basically decided that enough was enough, and wasting another day (after using up 3 days of dev time) on trying to blindly get Auth0 was not possible. So I went ahead and contacted the previous team for some help deploying with Auth0, and they immediately sent their old env variables, even though that was supposed to be an internal secret.
 
 Goes to show you that sometimes, just asking for a little help can help solve your most intractable problems. I think we are still having a little issue with that, but I think that now, we can at least get something up on our personal development machines.

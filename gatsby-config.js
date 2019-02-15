@@ -5,7 +5,7 @@ module.exports = {
     description: `A simple blog to document my Labs experience at Lambda.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      twitter: `tryingtokeepup`
+      twitter: `iamnotoriginal2`
     }
   },
   plugins: [

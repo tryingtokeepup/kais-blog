@@ -3,7 +3,7 @@ layout: blog
 title: 'Labs Retrospective 2 - Electric Booglaloo, or How Our Team is Doing Great'
 date: 2019-02-22T20:06:25.294Z
 ---
-![](/content/assets/backend-fix.png "Backend was finally fixed - Was a .env error")
+![](../assets/backend-fix.png "Backend was finally fixed - Was a .env error")
 
 
 

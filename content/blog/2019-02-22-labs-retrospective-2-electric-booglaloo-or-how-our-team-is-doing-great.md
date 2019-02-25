@@ -15,20 +15,18 @@ My big accomplishment this week was finally nailing down a bug that made it impo
 
 This was a glorious find, as it took me the better part of two days to finally pinpoint the issue. It is almost galling that for all the effort I put into finding the variable, it was only a line of code in the end and a Netlify variable that was missing. Oh well.
 
-
-
-![](/content/assets/screen-shot-2019-02-25-at-7.34.23-am.png "The missing .env variable!")
+![](../assets/screen-shot-2019-02-25-at-7.34.23-am.png "The missing .env variable!")
 
 ## Tasks Pulled
 
 Other than the .env find, I fleshed out the backend schema, resolvers, and models with Nedim, and got better aquainted with GraphQL. I am by no means a master at Prisma and GraphQL, but I am starting to get more confident that I can build something pretty complex with those technologies with last week's experience.
 
-### Ticket 1: Uncommented and documented the login function in NavResponse.js. 
+### Ticket 1: Uncommented and documented the login function in NavResponse.js.
 
 * [Github](https://github.com/Lambda-School-Labs/labs-team-home/pull/277)
 * [Trello](https://trello.com/c/oyd8ltxC/37-add-comments-to-readme)
 
-### Ticket 2: My first attempt into radically changing the backend environmental variables to see where the connection bug was originating. 
+### Ticket 2: My first attempt into radically changing the backend environmental variables to see where the connection bug was originating.
 
 * [Github](https://github.com/Lambda-School-Labs/labs-team-home/pull/286)
 * [Trello](https://trello.com/c/oyd8ltxC/37-add-comments-to-readme)
@@ -39,11 +37,15 @@ Other than the .env find, I fleshed out the backend schema, resolvers, and model
 * [Trello](https://trello.com/c/jTXWoQ2d/17-learn-graphql-apollo-prisma-kai)
 
 ### Ticket 4: Finally. FINALLY. Found the env variable that was causing all the pain. Aggh.
+
 * [Github](https://github.com/Lambda-School-Labs/labs-team-home/pull/301)
 * [Trello](https://trello.com/c/jTXWoQ2d/17-learn-graphql-apollo-prisma-kai)
 
-
 There were a few more pull requests (3 total), but they were trivial in nature. Most of my schema work for GraphQL is in Nedim's pull requests, so I might reference that in the future.
+
+
+
+![](../assets/schema.png "more schema stuff")
 
 ## Detailed Analysis
 

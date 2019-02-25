@@ -3,56 +3,62 @@ layout: blog
 title: 'Labs Retrospective 2 - Electric Booglaloo, or How Our Team is Doing Great'
 date: 2019-02-22T20:06:25.294Z
 ---
-![](../assets/backend-fix.png "Backend was finally fixed - Was a .env error")
-
-
-
 # Part 1 - Individual Accomplishments this Week
 
 Github Handle: [tryingtokeepup](https://github.com/tryingtokeepup)
 
-At least for me, this week was way better than the previous week. We were able to get everything up and running, our backend is finally able to talk to front-end without
+At least for me, this week was way better than the previous week. We were able to get everything up and running, our backend is finally able to talk to front-end without Auth0 errors. Our team also stayed incredibly cohesive throughout the week, thanks to a constant Zoom session that we could pop into at anytime. In all honesty, I would have probably collapsed into exhaustion a lot sooner if I didn't have my teammates to constantly cheer me up throughout the week. 
+
+My big accomplishment this week was finally nailing down a bug that made it impossible for our deployed front-end to communicate with our deployed back-end. Working closely with Nedim, who has for the past two weeks been my back-end partner, we finally figured out that it was a missing environmental variable that slipped through the cracks of the docs that was causing the issue. 
+
+![](../assets/backend-fix.png "Backend was finally fixed - Was a .env error")
+
+This was a glorious find, as it took me the better part of two days to finally pinpoint the issue. It is almost galling that for all the effort I put into finding the variable, it was only a line of code in the end and a Netlify variable that was missing. Oh well.
+
+
+
+![](/content/assets/screen-shot-2019-02-25-at-7.34.23-am.png "The missing .env variable!")
 
 ## Tasks Pulled
 
-Since our project requires us to add on new functionality to an already existing app, my goal this week was to understand the existing code. As such, all of my pull requests this week either adds comments to existing code or updates READMEs in order to better help my teammates:
+Other than the .env find, I fleshed out the backend schema, resolvers, and models with Nedim, and got better aquainted with GraphQL. I am by no means a master at Prisma and GraphQL, but I am starting to get more confident that I can build something pretty complex with those technologies with last week's experience.
 
-### Ticket 1: Added comments to Readme.md
+### Ticket 1: Uncommented and documented the login function in NavResponse.js. 
 
-* [Github](https://github.com/Lambda-School-Labs/labs-team-home/pull/247)
+* [Github](https://github.com/Lambda-School-Labs/labs-team-home/pull/277)
 * [Trello](https://trello.com/c/oyd8ltxC/37-add-comments-to-readme)
 
-### Ticket 2: Even more comments!
+### Ticket 2: My first attempt into radically changing the backend environmental variables to see where the connection bug was originating. 
 
-* [Github](https://github.com/Lambda-School-Labs/labs-team-home/pull/247)
+* [Github](https://github.com/Lambda-School-Labs/labs-team-home/pull/286)
 * [Trello](https://trello.com/c/oyd8ltxC/37-add-comments-to-readme)
 
-### Ticket 3: Actually did something useful - redirected our repo to the right backend
+### Ticket 3: Mostly a trivial fix, but helped my team fix a merge issue and repaired the master branch from its merge conflicts.
 
-* [Github](https://github.com/Lambda-School-Labs/labs-team-home/pull/248)
+* [Github](https://github.com/Lambda-School-Labs/labs-team-home/pull/294)
 * [Trello](https://trello.com/c/jTXWoQ2d/17-learn-graphql-apollo-prisma-kai)
 
-### Ticket 4: Last pull, env variable update
-
-* [Github](https://github.com/Lambda-School-Labs/labs-team-home/pull/271)
+### Ticket 4: Finally. FINALLY. Found the env variable that was causing all the pain. Aggh.
+* [Github](https://github.com/Lambda-School-Labs/labs-team-home/pull/301)
 * [Trello](https://trello.com/c/jTXWoQ2d/17-learn-graphql-apollo-prisma-kai)
+
+
+There were a few more pull requests (3 total), but they were trivial in nature. Most of my schema work for GraphQL is in Nedim's pull requests, so I might reference that in the future.
 
 ## Detailed Analysis
 
 ![](../assets/doggie_2.jpg)
 
-Yikes, this whole week was difficult for me. Need that dog above to keep me sane, for real. But Ticket 4 was me finally breaking down and asking the original team for help. I should probably screen shot our convo on zoom, but we as a team basically decided that enough was enough, and wasting another day (after using up 3 days of dev time) on trying to blindly get Auth0 was not possible. So I went ahead and contacted the previous team for some help deploying with Auth0, and they immediately sent their old env variables, even though that was supposed to be an internal secret.
+Wow, this was a crazy week. I mentioned most of my thoughts above, but the most important part of the whole week was persevering and not giving up on the hunt for the bug. Nedim and I went through probably every single possible combination of environmental variable and line of code pertaining to authentication in our code base. I spent probably a good 8 hours just reading documentation on Auth0, and even set up a complete parallel setup of our project on my own Netlify, complete with my own rollout of Auth0 so that I could test out what our app was missing. Our Project Managers actually admonished us that we should have brought this to the attention to the dedicated help group for Labs for consultation, as it took so much time for us to find the problem.
 
-Goes to show you that sometimes, just asking for a little help can help solve your most intractable problems. I think we are still having a little issue with that, but I think that now, we can at least get something up on our personal development machines.
+While going for help might have solved the issue faster (on that, I have a little skepticism, as they would have run into the same issue of having to test almost everything and anything to get a handle on the situation, but I dunno), I am really glad I got this fix under my belt. It cost me a lot of sleep and caused Nedim and I a lot of stress, but we squashed it in the end. I also learned a huge amount about how Auth0 really works under the hood (how rules work, how to write rules in standard SQL language and in Javascript), so I feel that the time was well utilized in the end. 
 
-(editor note: add like 3 screenshots or something)
+# Part 2 - How we formed a team -
 
-# Part 2 - Milestone Reflections
+Quick admission: our team kind of had it easy from the get-go; the four of us on the web side have been together from the very beginning. We were all in the same small group, Team Wolf, and we have always been the most tight-knit of all the small groups in a cohort already super tight-knit and small compared to previous cohorts. I have no idea how it turned out this way, but we were lucky.
 
-So, I think our Milestone this week was to work on TDD and complete it, and get something up and running on our project.
+If anyone wanted advice on how to form such a team, I would advise tons of memes and tons of face to face interaction. Of course, this means that you kind of have to be okay with irreverent humor, but it worked for us. This sometimes makes me wonder if culture fit (in HR speak) is really simply if everyone can join in in the same kind of humor, or at least can be flexible enough to tolerate it. And what if someone is great but they can't find the memes funny? I don't know, but we were fortunate enough not to have to deal with that. 
 
-So, TDD. I am actually really proud of my work on this, because I designated myself scribbler-in-chief. I wrote out most of the document in its roughest form, and let Bondor, Elieen, and Nedim clean it up, shorten and tighten it. I provide the rock, roughly chisel out what it needs to look like, and let the rest add the details and the prettiness. It was very effective, and I think we knocked it out of the park. I only hope that we can actually do most of what we put out to accomplish. If we can actually get Auth0 to work and our database to properly link up to the backend, we might have something beautiful come out of week 2.
+For group decision making, I think that we have such strong trust in each other and respect for each other's opinions that we all voice our ideas and concerns pretty much without any worry that we will be ignored. I am sure such cohesion disappears in larger groups, but it works great in this group of 6 people. It also helps tremendously that our iOS friends are consummate professionals, and really good people to boot. 
 
-For the whole competitor thing, we basically as a team built a team BaseCamp project, and checked out the Docs feature they had. It is basically what we are going to build out, and boy, was it fun to use. It was a really cool component, and we came out with a newfound appreciation of how deceptively simple it was as a feature, and how much work we probably will have to put in just to get it to work.
-
-Again, this points to my original frustration: I want to get that to work right away, but for now, there is nothing I can do on it until I actually get access to the overall site itself, but we keep getting blocked by Auth0. I think our team will just have to bash our heads against the wall this weekend until we can breakthrough to the other side.
+I guess that for me personally, I don't know what I am doing to help out the with the whole "make a great team" thing: it kind of happened organically.

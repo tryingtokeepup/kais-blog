@@ -17,7 +17,7 @@ This was a glorious find, as it took me the better part of two days to finally p
 
 
 
-![](/content/assets/screen-shot-2019-02-25-at-7.34.23-am.png "The missing .env variable!")
+![](../assets/screen-shot-2019-02-25-at-7.34.23-am.png "The missing .env variable!")
 
 ## Tasks Pulled
 

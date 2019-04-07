@@ -1,16 +1,25 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-
+import Filter from '../components/filter';
 import Bio from '../components/bio';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { rhythm } from '../utils/typography';
-
+import moment from 'moment';
 class BlogIndex extends React.Component {
+  constructor(props) {
+    console.log('props before turing into state', props);
+    super(props);
+    this.state = {
+      data: props.data
+    };
+  }
+
   render() {
-    const { data } = this.props;
-    const siteTitle = data.site.siteMetadata.title;
-    const posts = data.allMarkdownRemark.edges;
+    console.log(this.state);
+    //const { data } = this.props;
+    const siteTitle = this.state.data.site.siteMetadata.title;
+    const posts = this.state.data.allMarkdownRemark.edges;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -19,6 +28,7 @@ class BlogIndex extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         <Bio />
+        <Filter data={this.state.data.allMarkdownRemark.edges} />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug;
           return (
